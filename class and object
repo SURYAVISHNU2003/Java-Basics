@@ -1,0 +1,22 @@
+public class laptop{
+    String name="";
+    String processor="";
+    int ram=0;
+    int price=0;
+    
+    public static void main(String []args){
+        laptop la1=new laptop();
+        la1.name="Asus";
+        la1.processor="i5";
+        la1.ram=8;
+        la1.price=75000;
+
+        laptop la2=new laptop();
+        la2.name="Hp";
+        la2.processor="i7";
+        la2.ram=6;
+        la2.price=84000;
+
+        System.out.println(la2.price);
+    }
+}
