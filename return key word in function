@@ -1,0 +1,16 @@
+class func{
+    int add(int n1,int n2)
+    {
+        int sum=n1+n2;
+        return sum;
+
+    }
+  
+    public static void main(String []args){
+        func obj1=new func();
+        int Addition = obj1.add(55,25);
+        System.out.println(Addition);
+        
+
+    }
+}
