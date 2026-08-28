@@ -1,0 +1,19 @@
+import java.util.*;
+class school{
+    String passorfail(int totalmarks){
+        if(totalmarks > 35){
+            return "Pass";
+        }
+        else{
+            return "Fail";
+        }
+
+    }
+    public static void main(String []args){
+        Scanner sc=new Scanner(System.in);
+        int marks=sc.nextInt();
+        school obj= new school();
+        String Result=obj.passorfail(marks);
+        System.out.println(Result);
+    }
+}
