@@ -1,0 +1,11 @@
+class mobile{
+    void apple(){
+        System.out.println("Iphone");
+
+    }
+    public static void main(String args[]){
+    mobile mb=new mobile();
+    mb.apple();
+    }
+
+}
