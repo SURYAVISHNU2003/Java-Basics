@@ -1,0 +1,21 @@
+package Project;
+
+class Vehicle1{
+	
+	private void smoke() {
+		System.out.println("Black color smoke");
+		}
+	void bike() {
+		smoke();
+	}
+}
+
+public class Accessmodifier {
+	public static void main(String args[])
+	{
+		Vehicle1 v1=new Vehicle1();
+		v1.bike();
+		
+	}
+
+}
