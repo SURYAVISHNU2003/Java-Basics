@@ -1,0 +1,36 @@
+package Surya;
+
+class Person{
+	public String name;
+	protected int age;
+	private String SocialSecurityNumber;
+	String address;
+	
+	Person(String name, int age, String ssn, String address){
+		this.name= name;
+		this.age= age;
+		this.SocialSecurityNumber=ssn;
+		this.address=address;
+		
+	}
+	
+	
+}
+class Employee extends Person{
+	Employee(String name, int age, String ssn, String address){
+		super(name,age,ssn,address);
+		
+	}
+}
+
+public class Mainclass {
+	public static void main(String []args) {
+		Employee e=new Employee("John", 23,"gft234","Chennai");
+		
+		System.out.println(e.name);
+		
+		System.out.println(e.age);
+		System.out.println(e.address);
+	}
+
+}
