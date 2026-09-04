@@ -1,0 +1,20 @@
+package Surya;
+
+class demo{
+	static int mark =0;
+}
+public class student {
+
+	public static void main(String[] args) {
+		demo d1=new demo();
+		d1.mark=44;
+		demo d2=new demo();
+		d2.mark=66;
+		
+		System.out.println(demo.mark);
+	}
+
+}
+
+// We can directly call the class name
+
