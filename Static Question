@@ -1,0 +1,29 @@
+package Surya;
+
+class Counter{
+	static int count=0;
+	int instancenumber=0;
+	
+	Counter(){
+		count=count+1;
+		instancenumber=instancenumber+1;
+	}
+	
+	void disp() {
+		System.out.println(instancenumber);
+		System.out.println("Count"+ count);
+	}
+}
+public class Main {
+
+	public static void main(String[] args) {
+		Counter c=new Counter();
+		c.disp();
+		Counter c1=new Counter();
+		c1.disp();
+		Counter c2=new Counter();	
+		c2.disp();
+
+	}
+
+}
