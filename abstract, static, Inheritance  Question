@@ -1,0 +1,43 @@
+package Surya;
+
+abstract class Vehicle{
+	final void startEngine() {
+		System.out.println("Engine started");
+		}
+	
+	static String getVehicle() {
+		return "Generic Vehicle";
+	}
+   abstract void drive();
+}
+class car extends Vehicle{
+
+	@Override
+	void drive() {
+		System.out.println("Drive a car");
+		
+	}
+		
+}
+
+class Motorcycle extends Vehicle{
+
+	@Override
+	void drive() {
+		System.out.println("Drive a bike");
+		
+	}
+	
+}
+
+public class demo {
+
+	public static void main(String[] args) {
+		car c=new car();
+		c.drive();
+		System.out.println(Vehicle.getVehicle());
+		
+
+	}
+
+}
