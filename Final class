@@ -1,0 +1,19 @@
+package Surya;
+
+final class ConstantValues{
+	final double PI=3.14;
+	void disply() {
+		System.out.println("Pi="+PI);
+		
+	}
+}
+
+public class Maindemo {
+
+	public static void main(String[] args) {
+		 ConstantValues c=new ConstantValues();
+		 c.disply();
+
+	}
+
+}
