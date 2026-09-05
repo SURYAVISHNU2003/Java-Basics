@@ -1,0 +1,52 @@
+package Surya;
+
+abstract class Animals{
+	String name;
+	Animals (String name){
+		this.name=name; 
+	}
+	abstract void makeSound();
+		
+	
+}
+ class dog extends Animals{
+	 dog(String name){
+		 super(name);
+	 }
+
+	@Override
+	void makeSound() {
+System.out.println("Boww Boww");
+		
+	}
+	 
+	 
+ }
+ class cat extends Animals{
+cat(String name){
+	super(name);
+	
+}
+	@Override
+	void makeSound() {
+	System.out.println("Mewoo Mewoo");
+		
+	}
+	 
+	 
+ }
+
+public class Maindemo {
+
+	public static void main(String[] args) {
+		dog d1=new dog("Tommy");
+		System.out.println(d1.name);
+		d1.makeSound();
+		
+		cat c1=new cat("julie");
+	System.out.println(c1.name);
+	c1.makeSound();
+		 
+	}
+
+}
