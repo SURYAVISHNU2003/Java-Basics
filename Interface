@@ -4,8 +4,9 @@ interface Animal{
 	int mark=10;
 	void sound();
 }
-class Monkey implements Animal{
 
+class Monkey implements Animal
+{
 	@Override
 	public void sound() {
 		System.out.println("meeoww");
@@ -20,5 +21,4 @@ public class maindo {
 		c.sound();
 		System.out.println(c.mark);
 	}
-
 }
