@@ -1,0 +1,29 @@
+package Surya;
+
+interface Printable{
+	default void disp(){
+		System.out.println("ASD");
+	}
+}
+interface Shoeable{
+	void song();
+}
+class Read implements Printable,Shoeable{
+
+	@Override
+	public void song() {
+		System.out.println("Reading");
+	}
+	
+}
+
+ public class demoo {
+
+	public static void main(String[] args) {
+	Read r=new Read();
+		r.disp();
+		r.song();
+
+	}
+
+}
