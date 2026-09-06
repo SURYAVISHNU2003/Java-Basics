@@ -1,0 +1,27 @@
+package Surya;
+
+interface Printable{
+	void disp();
+}
+interface Shoeable{
+	void disp();
+}
+class Read implements Printable,Shoeable{
+
+	@Override
+	public void disp() {
+		System.out.println("Readable");
+		
+	}
+	
+}
+
+public class demoo {
+
+	public static void main(String[] args) {
+		Read r=new Read();
+		r.disp();
+
+	}
+
+}
