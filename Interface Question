@@ -1,0 +1,34 @@
+package Surya;
+
+interface playable{
+	void play();
+	
+}
+class guitar implements playable{
+
+	@Override
+	public void play() {
+		System.out.println("Play Guitar");
+		
+	}
+	
+}
+class piano implements playable{
+
+	@Override
+	public void play() {
+		System.out.println("Play Piano");
+		
+	}
+	
+}
+
+public class demoo {
+
+	public static void main(String[] args) {
+		piano p1=new piano();
+		p1.play();
+
+	}
+
+}
